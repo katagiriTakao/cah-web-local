@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+	<html lang='es'>
+
+
+<!----------------------------------------------------------------------------------------------->
+		<head>
+
+
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				
+
+			
+				<style>
+
+					body {
+					    background-image: url('resources/fondito.gif');
+					    background-size: auto;
+					   	color:WHITE;
+
+
+					}
+
+
+					button {
+						background-color: 	#999999;
+					    border: none;
+					    color: white;
+					    padding: 15px 32px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 36px;
+					}
+
+
+				</style>
+
+
+			 
+			 	<meta charset='utf-8'>
+
+      			<meta name = 'viewport' content = 'width = device-width, initial-scale = 1'>      
+  
+      
+
+  		</head>
+
+
+<!----------------------------------------------------------------------------------------------->
+
+   
+   <body class = 'container'>   
+
+
+
+		<img id="demo" src='' > 
+
+		<!--<img id="quest" src=''>-->
+
+		
+
+	<form method='post' action='resp.php'>
+		<input type='text' name='ans'> </input>
+		<input id='qs' type='hidden' value='82' name='card'>
+		<input type='submit'>
+	</form>
+
+	</br></br></br></br>
+
+	<button  onclick='window.location.reload()'>RELOAD</button>
+
+		<script>
+			var questionNum = Math.floor(Math.random() * 90);
+			document.getElementById("demo").src = 'qs/'+questionNum+'.png';
+			document.getElementById("qs").value = questionNum;
+
+
+			
+
+		</script>
+
+
+
+
+	</body>
+
+<!----------------------------------------------------------------------------------------------->
+
+	</html>
+
+
+
